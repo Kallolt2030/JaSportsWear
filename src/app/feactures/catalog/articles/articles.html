@@ -1,0 +1,24 @@
+<section class="container">
+
+  <h2 class="text-center mb-4 mt-5">Nuestros Artículos</h2>
+
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-4">
+
+      <select class="form-select" [(ngModel)]="sortArticles">
+        <option value="">Ordenar</option>
+        <option value="nameAsc">Nombre A-Z</option>
+        <option value="nameDesc">Nombre Z-A</option>
+        <option value="priceAsc">Precio menor a mayor</option>
+        <option value="priceDesc">Precio mayor a menor</option>
+      </select>
+
+    </div>
+  </div>
+
+  <app-product-card 
+    type="article"
+    [sort]="sortArticles">
+  </app-product-card>
+
+</section>

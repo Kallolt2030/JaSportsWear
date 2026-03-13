@@ -1,0 +1,116 @@
+<div class="home">
+
+  <!-- HERO -->
+  <section class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+
+      <h1 class="display-4 fw-bold mb-3">
+        Equípate para tu mejor entrenamiento
+      </h1>
+
+      <p class="lead mb-4">
+        Ropa y accesorios deportivos diseñados para rendimiento y estilo.
+      </p>
+
+      <a href="/catalog" class="btn btn-primary btn-lg">
+        Ver Catálogo
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="section-dark">
+
+    <div class="container">
+
+      <h2 class="text-center mt-5 mb-4">
+        Productos Destacados
+      </h2>
+
+      <div class="section-divider mb-5"></div>
+
+      <app-product-card [featuredOnly]="true"></app-product-card>
+
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORÍAS -->
+  <section class="container mt-5">
+
+    <h2 class="text-center">
+      Explora nuestras categorías
+    </h2>
+
+    <div class="section-divider mb-5"></div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="category-card text-center p-4">
+
+          <i class="bi bi-bag fs-1 mb-3"></i>
+
+          <h5>Ropa Deportiva</h5>
+
+          <a href="/clothes"
+             class="btn btn-outline-primary mt-2">
+
+            Ver productos
+
+          </a>
+
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card text-center p-4">
+
+          <i class="bi bi-box fs-1 mb-3"></i>
+
+          <h5>Artículos</h5>
+
+          <a href="/articles"
+             class="btn btn-outline-primary mt-2">
+
+            Ver productos
+
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- CTA WHATSAPP -->
+  <section class="cta text-center text-white mt-5 py-5">
+
+    <div class="container">
+
+      <h2 class="mb-3">
+        ¿Listo para mejorar tu entrenamiento?
+      </h2>
+
+      <p class="mb-4">
+        Contáctanos y consigue el mejor equipo deportivo.
+      </p>
+
+      <a href="https://wa.me/5210000000000"
+         target="_blank"
+         class="btn btn-success btn-lg">
+
+        <i class="bi bi-whatsapp me-2"></i>
+        Contactar por WhatsApp
+
+      </a>
+
+    </div>
+
+  </section>
+
+</div>

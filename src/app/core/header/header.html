@@ -1,0 +1,49 @@
+<!-- HEADER MEJORADO -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+
+    <!-- Logo / Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="/home">
+      <img src="assets/JA.png" alt="SportsWear" width="35" height="35" class="me-2 rounded">
+      <span class="fw-bold fs-4">SportsWear</span>
+    </a>
+
+    <!-- Botón responsive con aria-label para accesibilidad -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarMain" aria-controls="navbarMain" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+        <!-- Items del menú con mejor espaciado y efectos -->
+        <li class="nav-item mx-lg-1">
+          <a class="nav-link px-3 px-lg-2" href="/catalog">
+            <i class="bi bi-grid me-1"></i>Catálogo
+          </a>
+        </li>
+        
+        <li class="nav-item mx-lg-1">
+          <a class="nav-link px-3 px-lg-2" href="/clothes">
+            <i class="bi bi-tags me-1"></i>Ropa
+          </a>
+        </li>
+        
+        <li class="nav-item mx-lg-1">
+          <a class="nav-link px-3 px-lg-2" href="/articles">
+            <i class="bi bi-bag me-1"></i>Artículos
+          </a>
+        </li>
+        
+        <li class="nav-item mx-lg-1">
+          <app-contact></app-contact>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+

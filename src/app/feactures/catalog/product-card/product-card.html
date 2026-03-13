@@ -1,0 +1,42 @@
+<section>
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"
+        *ngFor="let product of filteredProducts">
+
+      <div class="card bg-dark text-white border-0 h-100 shadow-sm product-card">
+
+        <!-- Imagen -->
+        <img
+    class="card-img-top product-img"
+    [src]="product.images?.[0] || product.image || 'assets/default.png'"
+    (error)="setDefaultImage($event)"
+    [alt]="product.name">
+
+        <!-- Contenido -->
+        <div class="card-body d-flex flex-column">
+
+          <h5 class="card-title fw-semibold">
+            {{ product.name }}
+          </h5>
+
+          <p class="price mb-3">
+            ${{ product.price }}
+          </p>
+
+          <!-- Botón -->
+          <a class="btn btn-primary mt-auto w-100"
+            [href]="'https://wa.me/5210000000000?text=Hola, me interesa el producto ' + product.name"
+            target="_blank">
+
+            <i class="bi bi-whatsapp me-2"></i>
+            Pedir por WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

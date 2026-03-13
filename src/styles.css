@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/* Texto general */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Menús o elementos destacados */
+.navbar,
+.price,
+.menu {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}

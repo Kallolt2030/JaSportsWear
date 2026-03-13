@@ -1,0 +1,83 @@
+.contact-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  background: #0D0F14;
+  color: white;
+  border: 1px solid #2C3E50;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  animation: fadeInDown 0.2s ease;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-header {
+  color: #fff;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  color: #0d6efd;
+  background: transparent;
+}
+
+.dropdown-menu .text-muted {
+  color: #adb5bd !important;
+}
+
+.dropdown-divider {
+  border-top-color: #2C3E50;
+}
+
+/* Animación */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo del botón cuando está activo */
+.btn-link.nav-link {
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+}
+
+.btn-link.nav-link:hover,
+.btn-link.nav-link.show {
+  color: rgba(255,255,255,.75);
+}
+
+/* Formulario dentro del dropdown */
+.dropdown-menu .form-control {
+  background: #1a1e24;
+  border-color: #2C3E50;
+  color: white;
+}
+
+.dropdown-menu .form-control:focus {
+  background: #1a1e24;
+  border-color: #0d6efd;
+  color: white;
+  box-shadow: none;
+}
+
+.dropdown-menu .form-control::placeholder {
+  color: #6c757d;
+}

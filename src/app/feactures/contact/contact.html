@@ -1,0 +1,47 @@
+<div class="dropdown contact-dropdown">
+  <!-- Botón que activa el dropdown - ahora con ícono de WhatsApp -->
+  <button 
+    class="btn btn-link nav-link dropdown-toggle" 
+    type="button"
+    (click)="toggleMenu($event)"
+    [class.show]="showMenu"
+    id="contactDropdown"
+    aria-expanded="false">
+    <i class="bi bi-whatsapp me-1"></i>Contáctanos
+  </button>
+
+  <!-- Menú desplegable -->
+  <div 
+    class="dropdown-menu dropdown-menu-end p-3" 
+    [class.show]="showMenu"
+    style="min-width: 300px;"
+    (click)="$event.stopPropagation()">
+    
+    <h6 class="dropdown-header">¡Hablemos!</h6>
+    <p class="px-3 text-muted small">Tienda de ropa y artículos deportivos</p>
+    
+    <!-- Botón principal de WhatsApp -->
+    <div class="px-3 py-2">
+      <a href="https://wa.me/521234567890?text=Hola%20%21%20Quiero%20consultar%20sobre%20productos%20deportivos" 
+         target="_blank" 
+         class="btn btn-success w-100 mb-3">
+        <i class="bi bi-whatsapp me-2"></i>Envíanos un WhatsApp
+      </a>
+    </div>
+
+    <div class="dropdown-divider"></div>
+    
+    <!-- Menú de redes sociales -->
+    <div class="px-3 py-2">
+      <p class="small text-muted mb-2">Síguenos en redes:</p>
+      <a class="d-block py-1 text-decoration-none" href="https://instagram.com" target="_blank">
+        <i class="bi bi-instagram me-2"></i>Instagram
+      </a>
+      <a class="d-block py-1 text-decoration-none" href="https://facebook.com" target="_blank">
+        <i class="bi bi-facebook me-2"></i>Facebook
+      </a>
+      <a class="d-block py-1 text-decoration-none" href="https://tiktok.com" target="_blank">
+        <i class="bi bi-tiktok me-2"></i>TikTok
+      </a>
+    </div>
+</div>
