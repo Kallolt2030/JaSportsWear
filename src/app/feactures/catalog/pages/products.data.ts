@@ -24,10 +24,10 @@ export const PRODUCTS: Product[] = [
     category: "shirts",
     brand: "JaSportsWear",
     description: "Playera deportiva transpirable ideal para entrenamiento.",
-    image: "assets/products/playera1.png",
+    image: "assets/products/Playera-negra.jpg",
     images: [
-      "assets/products/",
-      "assets/products/"
+      "assets/products/Playera-negra.jpg",
+      "assets/products/PlayeraS-blanca.jpg"
     ],
     featured: true
   },

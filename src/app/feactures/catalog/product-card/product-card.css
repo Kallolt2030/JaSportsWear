@@ -1,34 +1,64 @@
+/* Tarjeta del producto */
 .product-card{
   background: #1F242B;
-  border-radius: 10px;
+  border-radius: 12px;
+  overflow: hidden;
   transition: all 0.25s ease;
 }
 
 .product-card:hover{
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
 }
 
+/* Contenedor de la imagen */
 .product-img{
-  height: 220px;
-  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1;      /* todas las imágenes cuadradas */
+  object-fit: contain;      /* evita que se recorten */
+  background: #111;         /* fondo si la imagen no llena */
+  padding: 10px;
 }
 
+/* Título del producto */
 .card-title{
   color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
+/* Precio */
 .price{
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #2F80ED;
 }
 
+/* Botón */
 .btn-primary{
   background: #2F80ED;
   border: none;
+  font-weight: 500;
+  padding: 10px;
+  transition: all 0.2s ease;
 }
 
 .btn-primary:hover{
   background: #256bd8;
+  transform: scale(1.02);
+}
+
+/* Icono de WhatsApp */
+.btn-primary i{
+  font-size: 1.1rem;
+}
+
+/* Ajuste para body de card */
+.card-body{
+  padding: 16px;
+}
+
+/* Mejora visual en hover */
+.product-card:hover .card-title{
+  color: #2F80ED;
 }
